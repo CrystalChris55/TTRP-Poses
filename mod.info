@@ -1,0 +1,5 @@
+name=TTRP Poses
+id=TTRPPoses
+require=radialmenuapi,RPActions
+description= Adds a bunch of poses for RP
+poster=poster.png

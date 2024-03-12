@@ -1,0 +1,12 @@
+VERSION = 1,
+
+option TTRPPoses.ToggleGhosting
+{
+	type = boolean, default = false,
+	page = TTRP Poses, translation = ToggleGhosting,
+}
+option TTRPPoses.GhostToggleRange
+{
+	type = integer, min = 1, max = 512, default = 30,
+	page = TTRP Poses, translation = GhostToggleRange,
+}
