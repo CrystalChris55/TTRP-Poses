@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <animNode x_extends='looped.xml'>
-	<m_Name>TTRP_WSitting</m_Name>
-	<m_AnimName>TTRP_WSitting</m_AnimName>
+	<m_Name>TTRP_Hug1</m_Name>
+	<m_AnimName>TTRP_Hug1</m_AnimName>
 	<m_BlendTime>1.5</m_BlendTime>
 	<m_Conditions>
-		<m_StringValue>TTRP_WSitting</m_StringValue>
+		<m_StringValue>TTRP_Hug1</m_StringValue>
 	</m_Conditions>
 	<m_SubStateBoneWeights>
 		<boneName>Dummy01</boneName>

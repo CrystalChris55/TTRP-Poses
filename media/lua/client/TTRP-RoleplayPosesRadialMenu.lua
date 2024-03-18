@@ -1,7 +1,8 @@
 -----------------------------------------------------------------------------------------------------------------------------------
--- hi i'm Chris and I wrote this by heavily modified emote code by referencing RPactions pose mod made by Fuu, please ask them or me first if you use this code! --
---             To contact me, my Discord is ''crystalchris'' for any questions or comments or concerns!                             --            
+-- hi i'm Chris and I wrote this heavily modified emote code by referencing RPactions pose mod made by Fuu, please ask them or me first if you use this code! --
+--             To contact me, my Discord is ''crystalchris'' for any questions or comments or concerns!                          --            
 -----------------------------------------------------------------------------------------------------------------------------------
+require 'ISUI/ISEmoteRadialMenu'
 
     -- We do math here. 
     function calculateDistance(x1, y1, x2, y2)
@@ -36,31 +37,34 @@
         local closestZombie, closestDistance = determineNearestZombie(playerObject)
         maxRange = SandboxVars.TTRPPoses.GhostToggleRange or 30
         local closestZombieInfo = tostring(closestZombie) -- Convert closestZombie to a string for debug purposes.
-        --print("Closest zombie distance: " .. closestDistance) -- Print  distance
-        --print("Closest zombie distance: " .. closestZombieInfo) -- Print zombie Iso
-        --print("Max Range:" .. maxRange)
+        -- print("Closest zombie distance: " .. closestDistance) 
+        -- print("Closest zombie distance: " .. closestZombieInfo) 
+        -- print("Max Range:" .. maxRange)
 
     -- Check if closestDistance and maxRange are valid and if not; exit the function early.(In cases where a Zombie is not in render distance or zombies are turned off for pre-apoc settings)
     if type(closestDistance) ~= "number" or type(closestZombieInfo) ~= "string" or type(maxRange) ~= "number" then
-        print("Warning: closestDistance or maxRange is not a number.")
+        -- print("Warning: closestDistance or maxRange is not a number.")
         return -- Exit the function early if either value is not valid
     end
 
         if closestDistance <= maxRange and not isAdmin() then -- Does not set ghost mode to false if the player is an Admin.
             playerObject:setGhostMode(false)  -- Set ghost mode to false if within range of a zombie.
         end
-        -- if playerObject:isGhostMode() then
-        -- print("Ghost Mode is enabled for player.")
-        -- else
-        -- print("Ghost Mode is disabled for player.")
-        -- end
+         if playerObject:isGhostMode() then
+          -- print("Ghost Mode is enabled for player.")
+         else
+          -- print("Ghost Mode is disabled for player.")
+         end
     end
 
-Events.OnTick.Add(function(tick)
-    if tick % 150 ~= 0 then return end
-    setGhostModeBasedOnDistance(playerObject, maxRange)
-    --print("This is firing.")
-end)
+    Events.OnTick.Add(function(tick)
+        if tick % 150 ~= 0 then return end -- This ensures the function runs every 150 ticks. 
+        -- If sandbox setting is set to false, will not fire the zombie-detection function.
+        if SandboxVars.TTRPPoses.ToggleGhosting then
+            setGhostModeBasedOnDistance(playerObject, maxRange)
+            -- print("This is firing.")
+        end
+    end)
 
 
 -- Function to perform emote; conditionally apply ghost mode.
@@ -86,7 +90,6 @@ function poseTTRPMain(menu, player)
     menu:addSlice("TTRP Poses", getTexture("media/ui/menus/main-menu.png"), ISRadialMenu.createSubMenu, menu, TTRPSubmenu)
 end
 
-require 'ISUI/ISEmoteRadialMenu'
 --create the submenu with categories
 function TTRPSubmenu(menu, player)
     local playerObject = getSpecificPlayer(0)
@@ -99,13 +102,24 @@ function TTRPSubmenu(menu, player)
 end
 
 function subTTRPPoses(menu)
-    --Standing/Leaning Poses Menu
+    -- Sitting Main Menu
+    menu:addSlice("Standing Lean", getTexture("media/ui/icon1.png"), ISRadialMenu.createSubMenu, menu, StandingLean)
+    menu:addSlice("Standing Upright", getTexture("media/ui/icon2.png"), ISRadialMenu.createSubMenu, menu, Standing)
+end
+
+function StandingLean(menu)
+    --Leaning Poses Menu
     menu:addSlice("Lean - Sassy", getTexture("media/ui/poses/standing/lean-sassy.png"), doEmote, "TTRP_SassyLean")
     menu:addSlice("Lean - Hands Flat", getTexture("media/ui/poses/standing/hands-table.png"), doEmote, "TTRP_LeanHandsFlat")
     menu:addSlice("Lean - Chin on Fist", getTexture("media/ui/poses/standing/chin-on-fist.png"), doEmote, "TTRP_LeanOnChin")
     menu:addSlice("Lean - Foot on Object", getTexture("media/ui/poses/standing/foot-object.png"), doEmote, "TTRP_Standing-Foot-On-Object")
     menu:addSlice("Lean - Hands Resting Behind", getTexture("media/ui/poses/standing/leantback.png"), doEmote, "TTRP_LeantBackHandsResting")
     menu:addSlice("Lean - Glass Box of Emotion", getTexture("media/ui/poses/standing/hand-eyes.png"), doEmote, "TTRP_GlassBoxOfEmotion")
+    menu:addSlice("Lean - Cleaning Gun/Racking Gun", getTexture("media/ui/poses/standing/hand-eyes.png"), doEmote, "TTRP_Clean_Pistol")
+    end
+
+function Standing(menu)
+    -- Standing menu
     menu:addSlice("Stand - JoJo Pose", getTexture("media/ui/poses/standing/jojo.png"), doEmote, "TTRP_JoJoPose")
     menu:addSlice("Stand - Holding Hands Shy", getTexture("media/ui/poses/standing/holding-hands-shy.png"), doEmote, "TTRP_HoldHandsShy")
     menu:addSlice("Stand - Ready to Draw", getTexture("media/ui/poses/standing/drawholster.png"), doEmote, "TTRP_GunslingerReady")
@@ -124,8 +138,15 @@ function subTTRPPoses(menu)
     menu:addSlice("Stand - Wall Tinkle", getTexture("media/ui/poses/standing/noicon.png"), doEmote, "TTRP_Wall_Tinkle")
     menu:addSlice("Stand - Drunken Shamble", getTexture("media/ui/poses/standing/noicon.png"), doEmote, "TTRP_Drunk")
     menu:addSlice("Stand - Scared", getTexture("media/ui/poses/standing/noicon.png"), doEmote, "TTRP_Scared_Look")
-    end
-     
+    menu:addSlice("Stand - Thinking", getTexture("media/ui/poses/standing/noicon.png"), doEmote, "TTRP_Think")
+    menu:addSlice("Stand - Pondering", getTexture("media/ui/poses/standing/noicon.png"), doEmote, "TTRP_Pondering")
+    menu:addSlice("Stand - Cooling Off", getTexture("media/ui/poses/standing/noicon.png"), doEmote, "TTRP_CoolingOff")
+    menu:addSlice("Stand - TTRP_Hug A", getTexture("media/ui/poses/standing/noicon.png"), doEmote, "TTRP_Hug1")
+    menu:addSlice("Stand - TTRP_MakeoutA", getTexture("media/ui/poses/standing/noicon.png"), doEmote, "TTRP_Makeout1")
+    menu:addSlice("Stand - TTRP_MakeoutB", getTexture("media/ui/poses/standing/noicon.png"), doEmote, "TTRP_Makeout2")
+
+end
+
 function subTTRPSit(menu)
     -- Sitting Main Menu
     menu:addSlice("Sit on Ground", getTexture("media/ui/icon1.png"), ISRadialMenu.createSubMenu, menu, SittingGround)
@@ -180,6 +201,8 @@ function subTTRPprops(menu)
   menu:addSlice("Stand - Holding Pistol Idle", getTexture("media/ui/poses/props/pistolsteady.png"), doEmote, "TTRP_HoldPistol")
   menu:addSlice("Kneel - Holding Rifle Steady", getTexture("media/ui/poses/props/kneelshoot.png"), doEmote, "TTRP_HoldRifleKneel")
   menu:addSlice("Stand - Bat Pat", getTexture("media/ui/poses/props/batpat.png"), doEmote, "TTRP_BatPat")
+  menu:addSlice("Stand - Weapon Held Behind Head", getTexture("media/ui/poses/props/noicon.png"), doEmote, "TTRP_HoldBehindHead")
+  menu:addSlice("Stand - Bat on Shoulder", getTexture("media/ui/poses/props/noicon.png"), doEmote, "TTRP_Walk-Weapon-Shoulder")
 end
 
 function subTTRPDynamic(menu)
@@ -192,6 +215,10 @@ function subTTRPDynamic(menu)
    menu:addSlice("CPR", getTexture("media/ui/poses/dynamic/icon1.png"), doEmote, "TTRP_CPR")
    menu:addSlice("Up Yours", getTexture("media/ui/poses/dynamic/icon1.png"), doEmote, "TTRP_UpYours")
    menu:addSlice("Big Wave", getTexture("media/ui/poses/dynamic/icon1.png"), doEmote, "TTRP_BigWave")
+   menu:addSlice("Rude Jerking Gesture", getTexture("media/ui/poses/dynamic/icon1.png"), doEmote, "TTRP_JackRude")
+   menu:addSlice("Panicking", getTexture("media/ui/poses/dynamic/icon1.png"), doEmote, "TTRP_Panic")
+   menu:addSlice("Up Yours - Casual", getTexture("media/ui/poses/dynamic/icon1.png"), doEmote, "TTRP_UpYoursCasual")
+   menu:addSlice("Sighing", getTexture("media/ui/poses/dynamic/icon1.png"), doEmote, "TTRP_Sighing")
    -- Can't get it to move. menu:addSlice("Crawling", getTexture("media/ui/poses/props/icon1.png"), doEmote, "TTRP_WoundedCrawl")
    -- Placeholder test pose menu:addSlice("T-pose test", getTexture("media/ui/poses/props/icon1.png"), doEmote, "TTRP_TPoseTest")
 end

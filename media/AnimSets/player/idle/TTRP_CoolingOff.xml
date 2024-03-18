@@ -1,12 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<animNode>
-	<m_Name>TTRP_SassySit</m_Name>
-	<m_AnimName>TTRP_SassySit</m_AnimName>
+<animNode x_extends='looped.xml'>
+	<m_Name>TTRP_CoolingOff</m_Name>
+	<m_AnimName>TTRP_CoolingOff</m_AnimName>
 	<m_BlendTime>1.5</m_BlendTime>
 	<m_Conditions>
-		<m_Name>PerformingAction</m_Name>
-		<m_Type>STRING</m_Type>
-		<m_StringValue>TTRP_SassySit</m_StringValue>
+		<m_StringValue>TTRP_CoolingOff</m_StringValue>
 	</m_Conditions>
 	<m_SubStateBoneWeights>
 		<boneName>Dummy01</boneName>
