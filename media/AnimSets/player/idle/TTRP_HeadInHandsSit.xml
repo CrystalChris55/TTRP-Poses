@@ -2,7 +2,7 @@
 <animNode x_extends='looped.xml'>
 	<m_Name>TTRP_HeadInHandsSit</m_Name>
 	<m_AnimName>TTRP_HeadInHandsSit</m_AnimName>
-	<m_BlendTime>2.0</m_BlendTime>
+	<m_BlendTime>0.1</m_BlendTime>
 	<m_Conditions>
 		<m_StringValue>TTRP_HeadInHandsSit</m_StringValue>
 	</m_Conditions>

@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <animNode x_extends='looped.xml'>
-	<m_Name>TTRP_Walk-Weapon-Shoulder</m_Name>
-	<m_AnimName>TTRP_Walk-Weapon-Shoulder</m_AnimName>
-	<m_BlendTime>0.5</m_BlendTime>
+	<m_Name>TTRP_HoldVest</m_Name>
+	<m_AnimName>TTRP_HoldVest</m_AnimName>
+	<m_BlendTime>0.1</m_BlendTime>
 	<m_Conditions>
-		<m_StringValue>TTRP_Walk-Weapon-Shoulder</m_StringValue>
+		<m_StringValue>TTRP_HoldVest</m_StringValue>
 	</m_Conditions>
-<m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
 		<boneName>Bip01_Spine</boneName>
 		<includeDescendants>false</includeDescendants>
-		<weight>0.8</weight>
+		<weight>1</weight>
 	</m_SubStateBoneWeights>
 	<m_SubStateBoneWeights>
 		<boneName>Bip01_Spine1</boneName>
@@ -18,12 +18,12 @@
 	</m_SubStateBoneWeights>
 	<m_SubStateBoneWeights>
 		<boneName>Bip01_Neck</boneName>
-		<includeDescendants>false</includeDescendants>
+		<includeDescendants>true</includeDescendants>
 		<weight>1</weight>
 	</m_SubStateBoneWeights>
 	<m_SubStateBoneWeights>
 		<boneName>Bip01_Head</boneName>
-		<includeDescendants>false</includeDescendants>
+		<includeDescendants>true</includeDescendants>
 		<weight>1</weight>
 	</m_SubStateBoneWeights>
 	<m_SubStateBoneWeights>
@@ -33,6 +33,11 @@
 	<m_SubStateBoneWeights>
 		<boneName>Bip01_L_UpperArm</boneName>
 		<includeDescendants>false</includeDescendants>
+		<weight>1</weight>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_L_Forearm</boneName>
+		<includeDescendants>true</includeDescendants>
 		<weight>1</weight>
 	</m_SubStateBoneWeights>
 	<m_SubStateBoneWeights>
@@ -47,27 +52,32 @@
 	</m_SubStateBoneWeights>
 	<m_SubStateBoneWeights>
 		<boneName>Bip01_R_UpperArm</boneName>
-		<includeDescendants>false</includeDescendants>
+		<includeDescendants>true</includeDescendants>
+		<weight>1</weight>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_R_Forearm</boneName>
+		<includeDescendants>true</includeDescendants>
 		<weight>1</weight>
 	</m_SubStateBoneWeights>
 	<m_SubStateBoneWeights>
 		<boneName>Bip01_Pelvis</boneName>
-		<includeDescendants>true</includeDescendants>
-		<weight>0.15</weight>
+		<includeDescendants>false</includeDescendants>
+		<weight>0.01</weight>
 	</m_SubStateBoneWeights>
 	<m_SubStateBoneWeights>
 		<boneName>Bip01_L_Thigh</boneName>
 		<includeDescendants>true</includeDescendants>
-		<weight>0.15</weight>
+		<weight>0.01</weight>
 	</m_SubStateBoneWeights>
 	<m_SubStateBoneWeights>
 		<boneName>Bip01_R_Thigh</boneName>
 		<includeDescendants>true</includeDescendants>
-		<weight>0.15</weight>
+		<weight>0.01</weight>
 	</m_SubStateBoneWeights>
 	<m_SubStateBoneWeights>
 		<boneName>Translation_Data</boneName>
 		<includeDescendants>false</includeDescendants>
-		<weight>0.15</weight>
+		<weight>0.01</weight>
 	</m_SubStateBoneWeights>
 </animNode>

@@ -3,7 +3,7 @@
 	<m_Name>TTRP_JackRude</m_Name>
 	<m_AnimName>TTRP_JackRude</m_AnimName>
 	<m_BlendTime>0.1</m_BlendTime>
-	<m_SpeedScale>0.7</m_SpeedScale>
+	<m_BlendTime>0.1</m_BlendTime>
 	<m_Conditions>
 		<m_StringValue>TTRP_JackRude</m_StringValue>
 	</m_Conditions>

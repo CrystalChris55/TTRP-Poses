@@ -2,7 +2,7 @@
 <animNode x_extends='looped.xml'>
 	<m_Name>TTRP_Facepalm</m_Name>
 	<m_AnimName>TTRP_Facepalm</m_AnimName>
-	<m_BlendTime>0.8</m_BlendTime>
+	<m_BlendTime>0.1</m_BlendTime>
 	<m_Conditions>
 		<m_StringValue>TTRP_Facepalm</m_StringValue>
 	</m_Conditions>

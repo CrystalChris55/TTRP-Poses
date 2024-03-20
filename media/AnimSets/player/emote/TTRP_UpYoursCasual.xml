@@ -3,7 +3,7 @@
 	<m_Name>TTRP_UpYoursCasual</m_Name>
 	<m_AnimName>TTRP_UpYoursCasual</m_AnimName>
 	<m_BlendTime>0.1</m_BlendTime>
-	<m_SpeedScale>1.2</m_SpeedScale>
+	<m_SpeedScale>1</m_SpeedScale>
 	<m_Conditions>
 		<m_StringValue>TTRP_UpYoursCasual</m_StringValue>
 	</m_Conditions>
