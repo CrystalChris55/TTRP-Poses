@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<animNode x_extends='looped.xml'>
+	<m_Name>TTRP_BBQShimmy</m_Name>
+	<m_AnimName>TTRP_BBQShimmy</m_AnimName>
+	<m_BlendTime>0.1</m_BlendTime>
+	<m_Conditions>
+		<m_StringValue>TTRP_BBQShimmy</m_StringValue>
+	</m_Conditions>
+	<m_SpeedScale>1.3</m_SpeedScale>
+	<m_SubStateBoneWeights>
+		<boneName>Dummy01</boneName>
+		<weight>1</weight>
+	</m_SubStateBoneWeights>
+</animNode>

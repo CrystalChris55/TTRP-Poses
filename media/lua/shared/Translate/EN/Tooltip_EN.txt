@@ -1,0 +1,3 @@
+Tooltip_EN = {
+	Tooltip_TTRPcard = "This forbidden feature is provided to you by powers on-high. Use at your own risk.",
+}

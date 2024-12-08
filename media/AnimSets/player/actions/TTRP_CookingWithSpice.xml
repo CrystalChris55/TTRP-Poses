@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>TTRP_CookingWithSpice</m_Name>
+	<m_AnimName>TTRP_CookingWithSpice</m_AnimName>
+	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions>
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_StringValue>TTRP_CookingWithSpice</m_StringValue>
+	</m_Conditions>
+	<m_SubStateBoneWeights>
+		<boneName>Dummy01</boneName>
+		<weight>1</weight>
+	</m_SubStateBoneWeights>
+</animNode>

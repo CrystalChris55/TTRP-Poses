@@ -1,0 +1,72 @@
+module TTRP
+{
+	imports
+	{
+		Base
+	}
+
+	item TTRP_Forbidden_Splits_Card
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	=	Forbidden Splits Card,
+		Tooltip	=	Tooltip_TTRPcard,
+		Icon	=	MagazineElectronics03,
+		StaticModel	=	Magazine,
+		WorldStaticModel	=	MagazineElec2Ground,
+	}
+
+	item TTRP_Forbidden_Twerk_Card
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	=	Forbidden Twerk Card,
+		Tooltip	=	Tooltip_TTRPcard,
+		Icon	=	MagazineElectronics03,
+		StaticModel	=	Magazine,
+		WorldStaticModel	=	MagazineElec2Ground,
+	}
+	item TTRP_Forbidden_T-Pose
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	=	Forbidden T-pose Card,
+		Tooltip	=	Tooltip_TTRPcard,
+		Icon	=	MagazineElectronics03,
+		StaticModel	=	Magazine,
+		WorldStaticModel	=	MagazineElec2Ground,
+	}
+	item TTRP_Forbidden_Frey
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	=	Forbidden Casey Frey Card,
+		Tooltip	=	Tooltip_TTRPcard,
+		Icon	=	MagazineElectronics03,
+		StaticModel	=	Magazine,
+		WorldStaticModel	=	MagazineElec2Ground,
+	}
+	item TTRP_Forbidden_Restart
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	=	Forbidden Restart Card,
+		Tooltip	=	Tooltip_TTRPcard,
+		Icon	=	MagazineElectronics03,
+		StaticModel	=	Magazine,
+		WorldStaticModel	=	MagazineElec2Ground,
+	}
+	item TTRP_PinkGuy
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	=	Forbidden Pink Guy Card,
+		Tooltip	=	Tooltip_TTRPcard,
+		Icon	=	MagazineElectronics03,
+		StaticModel	=	Magazine,
+		WorldStaticModel	=	MagazineElec2Ground,
+	}
+
+
+
+}
