@@ -415,7 +415,6 @@ function subTTRPDances(menu)
     menu:addSlice("Awkward Dance 2 - Raise the Roof", getTexture("media/ui/poses/dancing/Awkward-Dance-2.png"), doEmote, "TTRP_AwkwardDance2")
     menu:addSlice("Awkward Dance 3 - Wallflower", getTexture("media/ui/poses/dancing/Awkward-Dance-3.png"), doEmote, "TTRP_AwkwardDance3")
     menu:addSlice("Awkward Dance 4 - Dad Shimmy", getTexture("media/ui/poses/dancing/BBQDance.png"), doEmote, "TTRP_BBQShimmy")
-    menu:addSlice("Dance Instructor", getTexture("media/ui/poses/dancing/TTRPDanceinstructor.png"), doEmote, "TTRP_DanceInstructor")
 end
 
 -----------------
