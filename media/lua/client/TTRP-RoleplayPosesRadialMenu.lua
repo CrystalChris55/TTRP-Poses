@@ -415,7 +415,6 @@ function subTTRPDances(menu)
     menu:addSlice("Awkward Dance 2 - Raise the Roof", getTexture("media/ui/poses/dancing/Awkward-Dance-2.png"), doEmote, "TTRP_AwkwardDance2")
     menu:addSlice("Awkward Dance 3 - Wallflower", getTexture("media/ui/poses/dancing/Awkward-Dance-3.png"), doEmote, "TTRP_AwkwardDance3")
     menu:addSlice("Awkward Dance 4 - Dad Shimmy", getTexture("media/ui/poses/dancing/BBQDance.png"), doEmote, "TTRP_BBQShimmy")
-    menu:addSlice("Drums", getTexture("media/ui/poses/dancing/drums.png"), doEmote, "TTRP_DrumminOut")
     menu:addSlice("Dance Instructor", getTexture("media/ui/poses/dancing/TTRPDanceinstructor.png"), doEmote, "TTRP_DanceInstructor")
 end
 
@@ -427,7 +426,7 @@ function subTTRPDynamic(menu)
     menu:addSlice("Stomach Wound / Upset Stomach", getTexture("media/ui/poses/dynamic/handstomach.png"), doEmote, "TTRP_HandsOverStomach")
     menu:addSlice("Arm in Sling", getTexture("media/ui/poses/dynamic/sling.png"), doEmote, "TTRP_ArmSling")
     menu:addSlice("Limping", getTexture("media/ui/poses/dynamic/injuredlimp.png"), doEmote, "TTRP_LimpLeg")
-    menu:addSlice("Brushing/Mopping", getTexture("media/ui/poses/dynamic/brushmop.png"), doTTRPActions, "Base.PropaneTank", "mop")
+    -- menu:addSlice("Brushing/Mopping", getTexture("media/ui/poses/dynamic/brushmop.png"), doTTRPActions, "Base.PropaneTank", "mop")
     menu:addSlice("Stand - Shadowboxing", getTexture("media/ui/poses/dynamic/shadowboxing.png"), doEmote, "TTRP_ShadowBoxing")
     menu:addSlice("Kneel - Backpack Rummage", getTexture("media/ui/poses/dynamic/backpackrummage.png"), doEmote, "TTRP_BackpackRummage")
     menu:addSlice("Stand - Drunken Stumble", getTexture("media/ui/poses/dynamic/drunkenshamble.png"), doEmote, "TTRP_Drunk")
@@ -441,7 +440,7 @@ function subTTRPDynamic(menu)
     menu:addSlice("Kneel - Clutching Toilet", getTexture("media/ui/poses/dynamic/toiletchuck.png"), doEmote, "TTRP_ClutchingToilet")
     menu:addSlice("Making Snowangels", getTexture("media/ui/poses/dynamic/starfish.png"), doEmote, "TTRP_Snowangel")
     menu:addSlice("ASL", getTexture("media/ui/poses/dynamic/ASL.png"), doEmote, "TTRP_ASL")
-    menu:addSlice("Crawling", getTexture("media/ui/poses/props/icon1.png"), doEmote, "TTRP_WoundedCrawl")
+    -- menu:addSlice("Crawling", getTexture("media/ui/poses/props/icon1.png"), doEmote, "TTRP_WoundedCrawl")
     -- Placeholder test pose menu:addSlice("T-pose test", getTexture("media/ui/poses/props/icon1.png"), doEmote, "TTRP_TPoseTest")end
 end
 
