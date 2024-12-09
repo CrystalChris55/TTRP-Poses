@@ -3,6 +3,14 @@
 -- To contact me, my Discord is ''crystalchris'' for any questions or comments or concerns!                                                                          --            
 -- The first half of this file deals with the ghost mode application when posing to remove player collision hitboxes to allow for paired emotes.                     --
 -- The second half deals with the actual meat and potatoes of the UI and posing adjacent code.                                                                       --
+--  ________      ________       ___    ___  ________       _________    ________      ___           ________      ___  ___      ________      ___      ________     -- 
+--|\   ____\    |\   __  \     |\  \  /  /||\   ____\     |\___   ___\ |\   __  \    |\  \         |\   ____\    |\  \|\  \    |\   __  \    |\  \    |\   ____\     --
+--\ \  \___|    \ \  \|\  \    \ \  \/  / /\ \  \___|_    \|___ \  \_| \ \  \|\  \   \ \  \        \ \  \___|    \ \  \\\  \   \ \  \|\  \   \ \  \   \ \  \___|_    --
+-- \ \  \        \ \   _  _\    \ \    / /  \ \_____  \        \ \  \   \ \   __  \   \ \  \        \ \  \        \ \   __  \   \ \   _  _\   \ \  \   \ \_____  \   --
+--  \ \  \____    \ \  \\  \|    \/  /  /    \|____|\  \        \ \  \   \ \  \ \  \   \ \  \____    \ \  \____    \ \  \ \  \   \ \  \\  \|   \ \  \   \|____|\  \  --
+--   \ \_______\   \ \__\\ _\  __/  / /        ____\_\  \        \ \__\   \ \__\ \__\   \ \_______\   \ \_______\   \ \__\ \__\   \ \__\\ _\    \ \__\    ____\_\  \ --
+--    \|_______|    \|__|\|__||\___/ /        |\_________\        \|__|    \|__|\|__|    \|_______|    \|_______|    \|__|\|__|    \|__|\|__|    \|__|   |\_________\--
+--                            \|___|/         \|_________|                                                                                               \|_________|--
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 require 'ISUI/ISEmoteRadialMenu'
@@ -368,6 +376,7 @@ function subLongRifles(menu)
   menu:addSlice("Stand - Holding Rifle Up Idle", getTexture("media/ui/poses/props/rifle-idle-3.png"), doEmote, "TTRP_Rifle-One-Hand-Up")
   menu:addSlice("Kneel - Holding Rifle Steady", getTexture("media/ui/poses/props/kneelshoot.png"), doEmote, "TTRP_HoldRifleKneel")
   menu:addSlice("Kneel - Holding Rifle Idle", getTexture("media/ui/poses/props/kneelidle.png"), doEmote, "TTRP_HoldRifleIdleKneel")
+  menu:addSlice("Kneel - Holding Rifle Upwards", getTexture("media/ui/poses/props/holdrifleup.png"), doEmote, "TTRP_HoldRifleUp")
 end
 
 function subMeleeWeapons(menu)
@@ -443,9 +452,10 @@ function subTTRPDynamic(menu)
     -- Placeholder test pose menu:addSlice("T-pose test", getTexture("media/ui/poses/props/icon1.png"), doEmote, "TTRP_TPoseTest")end
 end
 
------------------------------------------------
--- Modified Fuu's action code - Timed Action triggers. --
------------------------------------------------
+-------------------------------------------------------------------------------------
+-- Modified Fuu's action code - Timed Action triggers. Currently these do nothing. --
+-- These will be utilized in a future update.                                      --
+-------------------------------------------------------------------------------------
 
  function doTTRPActions(item, action)
      local player = getSpecificPlayer(0)
