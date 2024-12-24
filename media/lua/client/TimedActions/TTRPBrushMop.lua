@@ -1,3 +1,4 @@
+-- Test file, might make timed actions with items in the future.
 require "TimedActions/ISBaseTimedAction"
 
 TTRPBrushMopAction = ISBaseTimedAction:derive("TTRPBrushMopAction");
