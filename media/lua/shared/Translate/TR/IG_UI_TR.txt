@@ -1,0 +1,268 @@
+IGUI_TR = {
+    -- Main Menu
+    IGUI_TTRP_Poses = "TTRP Pozlarý",
+    IGUI_TTRP_Cancel = "Animasyonu iptal et",
+    IGUI_TTRP_Standing = "Duruþ",
+    IGUI_TTRP_Sitting = "Otur",
+    IGUI_TTRP_Lying = "Uzan",
+    IGUI_TTRP_Props = "Ekipmanlar",
+    IGUI_TTRP_Emotes = "Ýfadeler",
+    IGUI_TTRP_Dances = "Danslar",
+    IGUI_TTRP_Dynamic = "Dinamik",
+    IGUI_TTRP_Favorites = "Favoriler",
+    IGUI_TTRP_Forbidden = "Yasaklýlar",
+
+    -- Standing Submenu
+    IGUI_TTRP_StandingLean = "Yaslanarak Duruþlar",
+    IGUI_TTRP_StandingLean2 = "Yaslanarak Duruþlar 2",
+    IGUI_TTRP_IdlePoses = "Hareketsiz Duruþlar",
+    IGUI_TTRP_ActivePoses = "Aktif Pozlar",
+    IGUI_TTRP_StandingPaired = "Çift Pozlarý",
+
+    -- Standing Lean Poses
+    IGUI_TTRP_LeanSassy = "Yaslan - Alaycý",
+    IGUI_TTRP_LeanSassyReverse = "Yaslan - Ters Alaycý",
+    IGUI_TTRP_LeanHandsFlat = "Yaslan - Eller Düz",
+    IGUI_TTRP_LeanOnChin = "Yaslan - Çeneyi Yumruða Daya",
+    IGUI_TTRP_LeanFootObject = "Yaslan - Ayak Nesne Üzerinde",
+    IGUI_TTRP_GlassBoxEmotion = "Yaslan - Saklanma",
+    IGUI_TTRP_LeanBackHandsFolded = "Yaslan - Arkaya Yaslan Eller Önde",
+    IGUI_TTRP_LeanTableLeft = "Yaslan - Masaya Yaslan Sol",
+    IGUI_TTRP_LeanTableRight = "Yaslan - Masaya Yaslan Sað",
+    IGUI_TTRP_LeanCrossedArmLeft = "Yaslan - Kollar Kavuþturulmuþ Sol",
+    IGUI_TTRP_LeanCrossedArmRight = "Yaslan - Kollar Kavuþturulmuþ Sað",
+    IGUI_TTRP_LeanBackPocket = "Yaslan - Geri Yaslan El Cepte",
+    IGUI_TTRP_LeanBackHandsBehind = "Yaslan - Geri Yaslan El Arkada",
+    IGUI_TTRP_GirlypopDoorLeanLeft = "Yaslan - Duvara/Kapýya Yaslan Sol",
+    IGUI_TTRP_GirlypopDoorLeanRight = "Yaslan - Duvara/Kapýya Yaslan Sað",
+
+    -- Standing Lean 2
+    IGUI_TTRP_LeanArmUpLeft = "Yaslan - Kolunu Yukarý Yasla Sol",
+    IGUI_TTRP_LeanArmUpRight = "Yaslan - Kolunu Yukarý Yasla Sað",
+    IGUI_TTRP_ArmLeanLeft = "Yaslan - Kolunu Yasla Sol",
+    IGUI_TTRP_ArmLeanRight = "Yaslan - Kolunu Yasla Sað",
+
+    -- Idle Poses
+    IGUI_TTRP_JoJoPose = "Duruþ - JoJo Pozu",
+    IGUI_TTRP_HoldingHandsShy = "Duruþ - Elleri Birleþik Utanmýþ",
+    IGUI_TTRP_HandOnHipAlt = "Duruþ - Eli Belinde",
+    IGUI_TTRP_HandOnChinHip = "Duruþ - Eli Belinde Çeneyi Yumruða Daya",
+    IGUI_TTRP_HandInPocketCasual = "Duruþ - Bir El Cepte Rahat Duruþ",
+    IGUI_TTRP_ShyArmRub = "Duruþ - Utangaç Kol Sývazlama",
+    IGUI_TTRP_FoldingHandsDemurely = "Duruþ - Eli Kavuþturma Utangaç",
+    IGUI_TTRP_HoldVestStraps = "Duruþ - Yelek Askýlarýný Tut",
+    IGUI_TTRP_RubbingHandBehindHead = "Duruþ - Baþýnýn Arkasýný Ovala",
+    IGUI_TTRP_HoldingNeck = "Duruþ - Boynunu Tut",
+
+    -- Active Poses
+    IGUI_TTRP_Taunt = "Duruþ - Alay",
+    IGUI_TTRP_FlourishingBow = "Duruþ - Zarif Eðilme",
+    IGUI_TTRP_ShockedPose = "Duruþ - Þok Pozu",
+    IGUI_TTRP_MilitarySalute = "Duruþ - Asker Selamý",
+    IGUI_TTRP_HandOverEyes = "Duruþ - Uzaða Bakma",
+    IGUI_TTRP_Pondering = "Duruþ - Düþünme",
+    IGUI_TTRP_HuggingSelf = "Duruþ - Kendini Tutma",
+    IGUI_TTRP_SoccerFlex = "Duruþ - Gövde Kasýný Sergileme",
+    IGUI_TTRP_Pose28 = "Yaslan - Poz 28",
+
+    -- Standing Paired
+    IGUI_TTRP_Hug = "Duruþ - Sarýlma",
+    IGUI_TTRP_MakeoutA = "Duruþ - Öpüþme A",
+    IGUI_TTRP_MakeoutB = "Duruþ - Öpüþme B",
+    IGUI_TTRP_ArmAroundOtherLeft = "Duruþ - Kol Atma Sol",
+    IGUI_TTRP_ArmAroundOtherRight = "Duruþ - Kol Atma Sað",
+    IGUI_TTRP_ArmAroundTwo = "Duruþ - Çift Kol Atma",
+    IGUI_TTRP_GirlyArmLeft = "Duruþ - Kadýnca Kol Sarma Sol",
+    IGUI_TTRP_GirlyArmRight = "Duruþ - Kadýnca Kol Sarma Sað",
+    IGUI_TTRP_Holding = "Duruþ - Taþýma",
+    IGUI_TTRP_Kabedon = "Kabedon",
+    IGUI_TTRP_HandsOnChest = "Duruþ - Eller Göðüste",
+    IGUI_TTRP_HoldHips = "Duruþ - Eller Cepte",
+
+    -- Sitting Submenu
+    IGUI_TTRP_SitGround = "Yere Otur",
+    IGUI_TTRP_SitFurniture1 = "Mobilyaya Otur 1",
+    IGUI_TTRP_SitFurniture2 = "Mobilyaya Otur 2",
+    IGUI_TTRP_PairedSitGround = "Çift Yere Otur",
+    IGUI_TTRP_PairedSitFurniture = "Çift Mobilyaya Otur",
+
+    -- Sitting Ground
+    IGUI_TTRP_SitHandTap = "Otur - El Dizde",
+    IGUI_TTRP_SitArmsKnee = "Otur - Eller Dizde Baðlý",
+    IGUI_TTRP_GirlyPopSitGround = "Otur - Feminen Yere Oturma",
+    IGUI_TTRP_SitHandsBound = "Otur - Eller Baðlý Diz Çökme",
+    IGUI_TTRP_SitSurrender = "Otur - Teslim Ol",
+    IGUI_TTRP_SitSway = "Otur - Sallanarak Baðdaþ Kurma",
+    IGUI_TTRP_SitElbowKnee = "Otur - Dirsek Dizde",
+    IGUI_TTRP_SitChinHands = "Otur - Eller Yüzde",
+    IGUI_TTRP_SitArmsKnees = "Otur - Kollar Dizde",
+    IGUI_TTRP_SitForearmsThighs = "Otur - Kollarý Uyluklara Koyma",
+    IGUI_TTRP_KneelHandWall = "Eðil - Eli Duvarda",
+    IGUI_TTRP_KneelPrayer = "Eðil - Oyuncu",
+    IGUI_TTRP_KneelHandOverHand = "Eðil - El Üstünde El",
+    IGUI_TTRP_KneelCrossedArms = "Eðil - Kollar Kavuþmuþ",
+
+    -- Sitting Object
+    IGUI_TTRP_ChairHeadInHands = "Koltuða/Yataða Otur - Eller Kafada",
+    IGUI_TTRP_ChairHandsThighs = "Koltuða Otur - Eller Bacaklarda",
+    IGUI_TTRP_ChairForearmsThighs = "Koltuða Otur - Eller Bacak Arasýnda",
+    IGUI_TTRP_ChairHandsHead = "Koltuða Otur - Eller Kafada",
+    IGUI_TTRP_LazyBoy = "Koltuða Otur - Tembel Oturuþ",
+    IGUI_TTRP_Manspread = "Koltuða Otur - Erkeksi Yayýlma",
+    IGUI_TTRP_ManspreadArmsFolded = "Koltuða Otur - Erkeksi Yayýlma Kollar Kavuþmuþ",
+    IGUI_TTRP_SassySit = "Koltuða Otur - Alaycý",
+    IGUI_TTRP_LegsCrossedChair = "Koltuða Otur - Bacaklar Çapraz",
+    IGUI_TTRP_ChairChinInHand = "Koltuða Otur - El Çenede",
+    IGUI_TTRP_ChairOneLegUp = "Koltuða Otur - Tek Bacak Yukarýda",
+    IGUI_TTRP_ChairHandsFolded = "Koltuða Otur - Ellerle Öne Yaslan",
+    IGUI_TTRP_LegsKickedUp = "Koltuða Otur - Bacaklarý Uzat",
+    IGUI_TTRP_CrossChair = "Koltuða Otur - Karþý Yönde Otur",
+    IGUI_TTRP_SunbathingBeachChair = "Koltuða Otur - Güneþlen",
+    IGUI_TTRP_GirlypopArmsLegs = "Koltuða Otur - Feminen Dizler Yukarýda",
+
+    -- Sitting Object 2
+    IGUI_TTRP_ChairHandArmThigh = "Koltuða Otur - Eller ve Kollar Bacaklarda",
+    IGUI_TTRP_ThaneSit = "Koltuða Otur - Kafa Yaslama",
+    IGUI_TTRP_JarlBallin = "Koltuða Otur - JARL Ballin",
+    IGUI_TTRP_JarlBallinTwoArms = "Koltuða Otur - JARL Ballin Ýki Kol",
+    IGUI_TTRP_ChairHandsOnChair = "Koltuða Otur - Eller Koltukta Feminen",
+    IGUI_TTRP_ChaiseLounge = "Koltuða Otur - Þenzlong Oturuþu",
+    IGUI_TTRP_ChaiseLoungeReversed = "Koltuða Otur - Þenzlong Oturuþu Ters",
+    IGUI_TTRP_OneLegUpOneDown = "Koltuða Otur - Bir Yukarý, Bir Aþaðý",
+    IGUI_TTRP_OneLegUpOneDownReversed = "Koltuða Otur - Bir Yukarý, Bir Aþaðý",
+    IGUI_TTRP_LegsCrossed = "Koltuða Otur - Bacaklar Çapraz",
+    IGUI_TTRP_GoblinSit = "Koltuða Otur - Goblin Oturuþu",
+
+    -- Sitting Object Paired
+    IGUI_TTRP_SittingBeside = "Otur - Yanýnda Otur",
+    IGUI_TTRP_SitHandThighRight = "Yanýnda Otur - El Bacakta (Sað)",
+    IGUI_TTRP_SitHandThighLeft = "Yanýnda Otur - El Bacakta (Sol)",
+    IGUI_TTRP_SitArmAroundRight = "Otur - Kol Havada Sað",
+    IGUI_TTRP_SitArmAroundLeft = "Otur - Kol Havada Sol",
+
+    -- Sitting Ground Paired
+    IGUI_TTRP_SitBesideGround = "Otur - Yerde Yanýnda Otur",
+    IGUI_TTRP_SitLegsSpread = "Otur - Yerde Bacaklarý Aç",
+    IGUI_TTRP_SitBetweenLegs = "Otur - Bacaklarýn Arasýnda",
+    IGUI_TTRP_SitArmAroundLeft = "Otur - Yerde Sol Kol Havada",
+    IGUI_TTRP_SitArmAroundRight = "Otur - Yerde Sað Kol Havada",
+    IGUI_TTRP_HeadInLap = "Otur - Baþ Kucakta",
+
+    -- Lying Down Menu
+    IGUI_TTRP_LyingGround = "Yerde Uzanma",
+    IGUI_TTRP_LyingFurniture = "Mobilyada Uzanma",
+    IGUI_TTRP_PairedLying = "Çift Uzanma",
+    IGUI_TTRP_PairedLyingFurniture = "Çift Mobilyada Uzanma",
+
+    -- Lying Down Floor
+    IGUI_TTRP_DownAndOut = "Uzan - Yaralý Uzan",
+    IGUI_TTRP_LyingInjured2 = "Uzan - Yaralý Uzan 2",
+    IGUI_TTRP_Cloudspotting = "Uzan - Bulut Ýzleme",
+    IGUI_TTRP_Lie_Flutter_Kick = "Uzan - Bacak Sallama",
+    IGUI_TTRP_FeetOnSofa = "Uzan - Nesneye Ayak Yaslama",
+    IGUI_TTRP_FetalPosition = "Uzan - Cenin Pozisyonu",
+    IGUI_TTRP_Faceplant = "Uzan - Yüzüstü",
+    IGUI_TTRP_LayStomach1 = "Uzan - Karýn Üstü 1",
+    IGUI_TTRP_FrenchGirl = "Uzan - Fransýz Kýz",
+    IGUI_TTRP_French_Girl_Reversed = "Uzan - Fransýz Kýz Ters",
+    IGUI_TTRP_Lying_Asleep = "Uzan - Uyu 1",
+    IGUI_TTRP_Lying_Asleep_Reversed = "Uzan - Uyu 1 Ters",
+    IGUI_TTRP_Lying_Sleeping2 = "Uzan - Uyu 2",
+    IGUI_TTRP_Suntanning = "Uzan - Yerde Güneþlen",
+    IGUI_TTRP_LYING_ELBOWS = "Uzan - Dirsek Üstü",
+
+    -- Lying Down Furniture
+    IGUI_TTRP_FetalFurniture = "Uzan - Mobilyada Cenin Pozisyonu",
+    IGUI_TTRP_StomachLayBed = "Uzan - Yatakta Karýn Üstü",
+    IGUI_TTRP_LegFlutterFurniture = "Uzan - Mobilyada Bacak Sallama",
+    IGUI_TTRP_French_Girl_ReversedFurniture = "Uzan - Mobilyada Fransýz Kýz Ters",
+    IGUI_TTRP_Lying_AsleepFurniture = "Uzan - Mobilyada Uyu 1",
+    IGUI_TTRP_Lying_Asleep_ReversedFurniture = "Uzan - Mobilyada Uyu 1 Ters",
+    IGUI_TTRP_Lying_Sleeping2Furniture = "Uzan - Mobilyada Uyu 2",
+    IGUI_TTRP_LYING_ELBOWS_BED = "Uzan - Diz Üstü",
+
+    -- Lying Paired Ground
+    IGUI_TTRP_Cuddle1 = "Uzan - Sarýl",
+    IGUI_TTRP_Cuddle_Reversed = "Uzan - Ters Sarýl",
+    IGUI_TTRP_Laying_Head_In_Lap = "Uzan - Kafa Kucakta",
+
+    -- Lying Paired Furniture
+    IGUI_TTRP_Cuddle1_Offset = "Uzan - Mobilyada Sarýl",
+    IGUI_TTRP_Cuddle_Reversed_Offset = "Uzan - Mobilyada Sarýl Ters",
+
+    -- Props Menu
+    IGUI_TTRP_LongRifles = "Tüfekler",
+    IGUI_TTRP_Pistols = "Tabancalar",
+    IGUI_TTRP_MeleeWeapons = "Yakýn Mesafe Silahlarý",
+
+    -- Long Rifles
+    IGUI_TTRP_HoldRifleSteady = "Duruþ - Sürekli Doðrult",
+    IGUI_TTRP_HoldRifle = "Duruþ - Silahý Rahat Tut",
+    IGUI_TTRP_HoldAtGunpointRifle = "Duruþ - Tüfeði Niþan Alarak Tut",
+    IGUI_TTRP_Holding_Rifle_Idle_2 = "Duruþ - Silahý Rahat Tut",
+    IGUI_TTRP_Rifle_One_Hand_Up = "Duruþ - Silahý Yukarýda Rahat Tut",
+    IGUI_TTRP_HoldRifleKneel = "Eðil - Sürekli Doðrult",
+    IGUI_TTRP_HoldRifleIdleKneel = "Eðil - Silahý Rahat Tut",
+    IGUI_TTRP_HoldRifleUp = "Eðil - Silahý Yere Koy",
+
+    -- Melee Weapons
+    IGUI_TTRP_BatPat = "Duruþ - Silahý Elinde Tut",
+    IGUI_TTRP_HoldBehindHead = "Duruþ - Silah Kafa Arkasýnda",
+    IGUI_TTRP_Weapon_Shoulder = "Duruþ - Silah Omuz Üstünde",
+    IGUI_TTRP_SwordStance1 = "Duruþ - Kýlýcý Hazýr Tut",
+    IGUI_TTRP_SwordStance2 = "Eðil - Kýlýcý Hazýr Tut",
+
+    -- Pistols
+    IGUI_TTRP_HoldPistol = "Duruþ - Tabancayý Rahat Tut",
+    IGUI_TTRP_GunslingerReady = "Duruþ - Eli Kýlýfýnda",
+    IGUI_TTRP_Pistol_Held_Upwards = "Duruþ - Namluyu Havada Tut",
+    IGUI_TTRP_HeldAtGunpoint = "Duruþ - Tabancayý Niþan Alarak Tut",
+    IGUI_TTRP_HeldAtGunpointOlympic = "Duruþ - Yusuf Dikeç Pozu",
+    IGUI_TTRP_Clean_Pistol = "Tabancayý Temizle",
+
+    -- Emotes Submenu
+    IGUI_TTRP_EmoteSnortPixie = "Uyuþturucu - Pixie Çubuðunu Çek",
+    IGUI_TTRP_EmoteAccuse = "J'accuse",
+    IGUI_TTRP_EmoteUpYours = "Canýn Cehenneme",
+    IGUI_TTRP_EmoteUpYoursCasual = "Canýn Cehenneme Rahat",
+    IGUI_TTRP_EmoteBigWave = "El Sallama",
+    IGUI_TTRP_EmoteRudeGesture = "Kaba Hareket",
+    IGUI_TTRP_EmoteThink = "Düþünme",
+    IGUI_TTRP_EmotePanic = "Panikleme",
+    IGUI_TTRP_EmoteSigh = "Derin Nefes Al",
+    IGUI_TTRP_EmoteCry = "Aðla",
+    IGUI_TTRP_EmoteFacepalm = "Hayal Kýrýklýðý",
+    IGUI_TTRP_EmoteScared = "Korkmuþ",
+
+    -- Dances Submenu
+    IGUI_TTRP_AwkwardDance1 = "Tuhaf Dans 1 - Awkward Shimmy",
+    IGUI_TTRP_AwkwardDance2 = "Tuhaf Dans 2 - Raise the Roof",
+    IGUI_TTRP_AwkwardDance3 = "Tuhaf Dans 3 - Wallflower",
+    IGUI_TTRP_AwkwardDance4 = "Tuhaf Dans 4 - Dad Shimmy",
+
+    -- Dynamic Submenu
+    IGUI_TTRP_HandsOverStomach = "Mide Bulantýsý",
+    IGUI_TTRP_ArmSling = "Kol Askýda",
+    IGUI_TTRP_LimpLeg = "Topallama",
+    IGUI_TTRP_ShadowBoxing = "Duruþ - Gölge Boksu",
+    IGUI_TTRP_BackpackRummage = "Eðil - Çanta Karýþtýrma",
+    IGUI_TTRP_Drunk = "Duruþ - Sarhoþ",
+    IGUI_TTRP_CPR = "Kalp Masajý",
+    IGUI_TTRP_CookingWithSpice = "Duruþ - Baharat Dökme",
+    IGUI_TTRP_Handwash = "Duruþ - Elini Yýka",
+    IGUI_TTRP_CoolingOff = "Duruþ - Yelle",
+    IGUI_TTRP_PointBehind = "Duruþ - Arkaný Ýþaret Et",
+    IGUI_TTRP_ExamineHand = "Duruþ - Nesneye Bakýn",
+    IGUI_TTRP_WallTinkle = "Yaslan - Wall Tinkle",
+    IGUI_TTRP_ClutchingToilet = "Eðil - Tuvalete Kus",
+    IGUI_TTRP_Snowangel = "Kardan Melek Yap",
+    IGUI_TTRP_ASL = "ASL",
+}
+
+
+
+
+
+Tooltip_TR = {
+	Tooltip_TTRPcard = "Bu yasak özellik, size yüce güçler tarafýndan saðlandý. Riski göze alarak kullanýn.",
+}

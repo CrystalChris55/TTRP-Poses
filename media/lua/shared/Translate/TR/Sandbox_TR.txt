@@ -1,0 +1,5 @@
+Sandbox_TR = {
+    Sandbox_TTRP Poses = "TTRP Poses",
+    Sandbox_ToggleGhosting = "Pozlar sýrasýnda oyuncu çarpýþmalarý için Hayalet Modunu açar/kapatýr. Ýþaretlendiðinde, Hayalet Modu poz verme sýrasýnda etkinleþir..",
+    Sandbox_GhostToggleRange = "Eðer Hayalet Modu Aç/Kapat özelliði etkinse, Hayalet Modunun otomatik devre dýþý býrakýlmasý için zombi yakýnlýk aralýðýný ayarlar. Mesafe kare cinsindendir. Varsayýlan: 30. Min: 1. Max: 512",
+  }
