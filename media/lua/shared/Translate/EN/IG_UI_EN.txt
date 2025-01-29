@@ -79,9 +79,8 @@ IGUI_EN = {
     IGUI_TTRP_HandsOnChest = "Stand - Hands on Chest",
     IGUI_TTRP_HoldHips = "Stand - Hands on Hips",
 
-    -- Sitting Submenu --
-    IGUI_TTRP_SitGround = "Sit on Ground 1",
-    IGUI_TTRP_SitGround2 = "Sit on Ground 2",
+    -- Sitting Submenu
+    IGUI_TTRP_SitGround = "Sit on Ground",
     IGUI_TTRP_SitFurniture1 = "Sit on Furniture 1",
     IGUI_TTRP_SitFurniture2 = "Sit on Furniture 2",
     IGUI_TTRP_PairedSitGround = "Paired Sit on Ground",
@@ -102,9 +101,6 @@ IGUI_EN = {
     IGUI_TTRP_KneelPrayer = "Kneel - Prayer",
     IGUI_TTRP_KneelHandOverHand = "Kneel - Hand Over Hand",
     IGUI_TTRP_KneelCrossedArms = "Kneel - Crossed Arms",
-
-    -- Sitting Ground 2
-    IGUI_TTRP_WrappedKneesGround = "Sit - Arms Wrapped Knees"
 
     -- Sitting Object
     IGUI_TTRP_ChairHeadInHands = "Sit In Chair/Bed - Head in Hands",
@@ -267,7 +263,6 @@ IGUI_EN = {
     IGUI_TTRP_ClutchingToilet = "Kneel - Clutching Toilet",
     IGUI_TTRP_Snowangel = "Making Snowangels",
     IGUI_TTRP_ASL = "ASL",
-    IGUI_TTRP_Campfiresit = "Campfire Squat",
 }
 
 

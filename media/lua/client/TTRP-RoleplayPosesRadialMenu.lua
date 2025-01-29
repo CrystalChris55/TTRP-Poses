@@ -198,20 +198,16 @@ end
 
 function IdlePoses(menu)
     -- Standing menu
-    menu:addSlice(getText("IGUI_TTRP_JoJoPose"), getTexture("media/ui/poses/standing/jojo.png"), doEmote, "TTRP_JoJoPose")
-    menu:addSlice(getText("IGUI_TTRP_HoldingHandsShy"), getTexture("media/ui/poses/standing/holding-hands-shy.png"), doEmote, "TTRP_HoldHandsShy")
-    menu:addSlice(getText("IGUI_TTRP_SassyStance"), getTexture("media/ui/poses/standing/sassystand.png"), doEmote, "TTRP_SassyStance")
-    menu:addSlice(getText("IGUI_TTRP_HandOnHipAlt"), getTexture("media/ui/poses/standing/hand-on-hip-alt.png"), doEmote, "TTRP_HandOnHipAlt")
-    menu:addSlice(getText("IGUI_TTRP_HandOnChinHip"), getTexture("media/ui/poses/standing/hand-hip-chin.png"), doEmote, "TTRP_HandOnHipHandOnChin")
-    menu:addSlice(getText("IGUI_TTRP_HandInPocketCasual"), getTexture("media/ui/poses/standing/hand-in-pocket-casual.png"), doEmote, "TTRP_handinpocketcasual")
-    menu:addSlice(getText("IGUI_TTRP_ShyArmRub"), getTexture("media/ui/poses/standing/arm-rub.png"), doEmote, "TTRP_ShyArmRub")
-    menu:addSlice(getText("IGUI_TTRP_FoldingHandsDemurely"), getTexture("media/ui/poses/standing/demure.png"), doEmote, "TTRP_HandsFoldedDemure")
-    menu:addSlice(getText("IGUI_TTRP_HoldVestStraps"), getTexture("media/ui/poses/standing/hold-vest.png"), doEmote, "TTRP_HoldVest")
-    menu:addSlice(getText("IGUI_TTRP_HoldVestStrapsWalking"), getTexture("media/ui/poses/standing/hold-vest.png"), doEmote, "TTRP_HoldVestWalking")
-    menu:addSlice(getText("IGUI_TTRP_RubbingHandBehindHead"), getTexture("media/ui/poses/standing/hand-behind-head.png"), doEmote, "TTRP_Hand-Behind-Head-Rub")
-    menu:addSlice(getText("IGUI_TTRP_HoldingNeck"), getTexture("media/ui/poses/standing/holdneck.png"), doEmote, "TTRP_HoldNeck")
-    menu:addSlice(getText("IGUI_TTRP_ThinkHoldSelfblend"), getTexture("media/ui/poses/standing/thinkholdself.png"), doEmote, "TTRP_ThinkHoldSelfblend")
-    menu:addSlice(getText("IGUI_TTRP_ShyHoldSelf"), getTexture("media/ui/poses/standing/shyholdself.png"), doEmote, "TTRP_ShyHoldSelf")
+    menu:addSlice("Stand - JoJo Pose", getTexture("media/ui/poses/standing/jojo.png"), doEmote, "TTRP_JoJoPose")
+    menu:addSlice("Stand - Holding Hands Shy", getTexture("media/ui/poses/standing/holding-hands-shy.png"), doEmote, "TTRP_HoldHandsShy")
+    menu:addSlice("Stand - Hand on Hip Alt", getTexture("media/ui/poses/standing/hand-on-hip-alt.png"), doEmote, "TTRP_HandOnHipAlt")
+    menu:addSlice("Stand - Hand On Chin, Hip", getTexture("media/ui/poses/standing/hand-hip-chin.png"), doEmote, "TTRP_HandOnHipHandOnChin")
+    menu:addSlice("Stand - One Hand in Pocket Casual", getTexture("media/ui/poses/standing/hand-in-pocket-casual.png"), doEmote, "TTRP_handinpocketcasual")
+    menu:addSlice("Stand - Shy Arm Rub", getTexture("media/ui/poses/standing/arm-rub.png"), doEmote, "TTRP_ShyArmRub")
+    menu:addSlice("Stand - Folding Hands Demurely", getTexture("media/ui/poses/standing/demure.png"), doEmote, "TTRP_HandsFoldedDemure")
+    menu:addSlice("Stand - Hold Vest Straps", getTexture("media/ui/poses/standing/hold-vest.png"), doEmote, "TTRP_HoldVest")
+    menu:addSlice("Stand - Rubbing Hand Behind Head", getTexture("media/ui/poses/standing/hand-behind-head.png"), doEmote, "TTRP_Hand-Behind-Head-Rub")
+    menu:addSlice("Stand - Holding Neck", getTexture("media/ui/poses/standing/holdneck.png"), doEmote, "TTRP_HoldNeck")
 end
 
 function ActivePoses(menu)
@@ -248,35 +244,29 @@ end
 
 function subTTRPSit(menu)
     -- Sitting Main Menu
-    menu:addSlice(getText("IGUI_TTRP_SitGround"), getTexture("media/ui/menus/ground_icon.png"), ISRadialMenu.createSubMenu, menu, SittingGround)
-    menu:addSlice(getText("IGUI_TTRP_SitGround2"), getTexture("media/ui/menus/ground_icon2.png"), ISRadialMenu.createSubMenu, menu, SittingGround2)
-    menu:addSlice(getText("IGUI_TTRP_SitFurniture1"), getTexture("media/ui/menus/furniture_icon.png"), ISRadialMenu.createSubMenu, menu, SittingObject)
-    menu:addSlice(getText("IGUI_TTRP_SitFurniture2"), getTexture("media/ui/menus/furniture_icon-2.png"), ISRadialMenu.createSubMenu, menu, SittingObject2)
-    menu:addSlice(getText("IGUI_TTRP_PairedSitGround"), getTexture("media/ui/menus/sit-paired-ground.png"), ISRadialMenu.createSubMenu, menu, SittingGroundPaired)
-    menu:addSlice(getText("IGUI_TTRP_PairedSitFurniture"), getTexture("media/ui/menus/sit-paired-furn.png"), ISRadialMenu.createSubMenu, menu, SittingObjectPaired)
+    menu:addSlice("Sit on Ground", getTexture("media/ui/menus/ground_icon.png"), ISRadialMenu.createSubMenu, menu, SittingGround)
+    menu:addSlice("Sit on Furniture 1", getTexture("media/ui/menus/furniture_icon.png"), ISRadialMenu.createSubMenu, menu, SittingObject)
+    menu:addSlice("Sit on Furniture 2", getTexture("media/ui/menus/furniture_icon-2.png"), ISRadialMenu.createSubMenu, menu, SittingObject2)
+    menu:addSlice("Paired Sit on Ground", getTexture("media/ui/menus/sit-paired-ground.png"), ISRadialMenu.createSubMenu, menu, SittingGroundPaired)
+    menu:addSlice("Paired Sit on Furniture", getTexture("media/ui/menus/sit-paired-furn.png"), ISRadialMenu.createSubMenu, menu, SittingObjectPaired)
 end
 
 function SittingGround(menu)
     -- Sitting On Ground Menu
-    menu:addSlice(getText("IGUI_TTRP_SitHandTap"), getTexture("media/ui/poses/sitting/hand-tap.png"), doEmote, "TTRP_SitHandTap")
-    menu:addSlice(getText("IGUI_TTRP_SitArmsKnee"), getTexture("media/ui/poses/sitting/arms-knee.png"), doEmote, "TTRP_HandsOnKnee")
-    menu:addSlice(getText("IGUI_TTRP_GirlyPopSitGround"), getTexture("media/ui/poses/sitting/girlypop-sit.png"), doEmote, "TTRP_GirlyPopSit")
-    menu:addSlice(getText("IGUI_TTRP_SitHandsBound"), getTexture("media/ui/poses/sitting/hands-cuffed.png"), doEmote, "TTRP_HandsBoundKneel")
-    menu:addSlice(getText("IGUI_TTRP_SitSurrender"), getTexture("media/ui/poses/sitting/surrender.png"), doEmote, "TTRP_KneelSurrender")
-    menu:addSlice(getText("IGUI_TTRP_SitSway"), getTexture("media/ui/poses/sitting/sway-sit.png"), doEmote, "TTRP_SitSway")
-    menu:addSlice(getText("IGUI_TTRP_SitElbowKnee"), getTexture("media/ui/poses/sitting/elbowonknee.png"), doEmote, "TTRP_ElbowOnKnee")
-    menu:addSlice(getText("IGUI_TTRP_SitChinHands"), getTexture("media/ui/poses/sitting/chin-in-hand.png"), doEmote, "TTRP_SitWithChinInHands")
-    menu:addSlice(getText("IGUI_TTRP_SitArmsKnees"), getTexture("media/ui/poses/sitting/arms-over-knee.png"), doEmote, "TTRP_SittingArmsOverKnee")
-    menu:addSlice(getText("IGUI_TTRP_SitForearmsThighs"), getTexture("media/ui/poses/sitting/fore-arms-thighs.png"), doEmote, "TTRP_Forearms-Thighs")
-    menu:addSlice(getText("IGUI_TTRP_KneelHandWall"), getTexture("media/ui/poses/sitting/hand-on-wall.png"), doEmote, "TTRP_KneelHandOnWall")
-    menu:addSlice(getText("IGUI_TTRP_KneelPrayer"), getTexture("media/ui/poses/sitting/praying.png"), doEmote, "TTRP_SitPrayer")
-    menu:addSlice(getText("IGUI_TTRP_KneelHandOverHand"), getTexture("media/ui/poses/sitting/kneel-crossed-hands.png"), doEmote, "TTRP_KneelingCrossedHand")
-    menu:addSlice(getText("IGUI_TTRP_KneelCrossedArms"), getTexture("media/ui/poses/sitting/kneel-crossed-arms.png"), doEmote, "TTRP_KneelingCrossedArms")
-end
-
-function SittingGround2(menu)
-    -- Sitting On Ground Menu 2
-    menu:addSlice(getText("IGUI_TTRP_WrappedKneesGround"), getTexture("media/ui/poses/sitting/wrapped-knees-ground.png"), doEmote, "TTRP_WrappedKneesGround")
+    menu:addSlice("Sit - Hand Tap on Leg", getTexture("media/ui/poses/sitting/hand-tap.png"), doEmote, "TTRP_SitHandTap")
+    menu:addSlice("Sit - Arms around Knee", getTexture("media/ui/poses/sitting/arms-knee.png"), doEmote, "TTRP_HandsOnKnee")
+    menu:addSlice("Sit - Girly-Pop Sit on Ground", getTexture("media/ui/poses/sitting/girlypop-sit.png"), doEmote, "TTRP_GirlyPopSit")
+    menu:addSlice("Sit - Hands bound kneeling", getTexture("media/ui/poses/sitting/hands-cuffed.png"), doEmote, "TTRP_HandsBoundKneel")
+    menu:addSlice("Sit - Surrender", getTexture("media/ui/poses/sitting/surrender.png"), doEmote, "TTRP_KneelSurrender")
+    menu:addSlice("Sit - Sway Side to Side", getTexture("media/ui/poses/sitting/sway-sit.png"), doEmote, "TTRP_SitSway")
+    menu:addSlice("Sit - Elbow on Knee", getTexture("media/ui/poses/sitting/elbowonknee.png"), doEmote, "TTRP_ElbowOnKnee")
+    menu:addSlice("Sit - Chin In Hands", getTexture("media/ui/poses/sitting/chin-in-hand.png"), doEmote, "TTRP_SitWithChinInHands")
+    menu:addSlice("Sit - Arms on Knees", getTexture("media/ui/poses/sitting/arms-over-knee.png"), doEmote, "TTRP_SittingArmsOverKnee")
+    menu:addSlice("Sit - Forearms on Thighs", getTexture("media/ui/poses/sitting/fore-arms-thighs.png"), doEmote, "TTRP_Forearms-Thighs")
+    menu:addSlice("Kneel - Hand on Wall", getTexture("media/ui/poses/sitting/hand-on-wall.png"), doEmote, "TTRP_KneelHandOnWall")
+    menu:addSlice("Kneel - Prayer", getTexture("media/ui/poses/sitting/praying.png"), doEmote, "TTRP_SitPrayer")
+    menu:addSlice("Kneel - Hand over Hand", getTexture("media/ui/poses/sitting/kneel-crossed-hands.png"), doEmote, "TTRP_KneelingCrossedHand")
+    menu:addSlice("Kneel - Crossed Arms", getTexture("media/ui/poses/sitting/kneel-crossed-arms.png"), doEmote, "TTRP_KneelingCrossedArms")
 end
 
 function SittingObject(menu)
@@ -301,20 +291,20 @@ end
 
 function SittingObject2(menu)
     -- Sitting on an Object Menu pt 2
-    menu:addSlice(getText("IGUI_TTRP_ChairHandArmThigh"), getTexture("media/ui/poses/sitting/laxarmsit.png"), doEmote, "TTRP_HandThighArmThigh")
-    menu:addSlice(getText("IGUI_TTRP_ThaneSit"), getTexture("media/ui/poses/sitting/Thane.png"), doEmote, "TTRP_ThaneSit")
-    menu:addSlice(getText("IGUI_TTRP_JarlBallin"), getTexture("media/ui/poses/sitting/JARLIN.png"), doEmote, "TTRP_JARL")
-    menu:addSlice(getText("IGUI_TTRP_JarlBallinTwoArms"), getTexture("media/ui/poses/sitting/JARLIN.png"), doEmote, "TTRP_JARL_ARMS_DOWN")
-    menu:addSlice(getText("IGUI_TTRP_ChairHandsOnChair"), getTexture("media/ui/poses/sitting/Handchair.png"), doEmote, "TTRP_Sit-Hands-On-Chair")
-    menu:addSlice(getText("IGUI_TTRP_ChaiseLounge"), getTexture("media/ui/poses/sitting/chaise-lounge.png"), doEmote, "TTRP_ChaiseLounge")
-    menu:addSlice(getText("IGUI_TTRP_ChaiseLoungeReversed"), getTexture("media/ui/poses/sitting/chaise-reversed.png"), doEmote, "TTRP_ChaiseLoungeReversed")
-    menu:addSlice(getText("IGUI_TTRP_OneLegUpOneDown"), getTexture("media/ui/poses/sitting/1up1down.png"), doEmote, "TTRP_One-leg-up-one-down")
-    menu:addSlice(getText("IGUI_TTRP_OneLegUpOneDownReversed"), getTexture("media/ui/poses/sitting/1up1downreversed.png"), doEmote, "TTRP_One-Leg-Up-One-Down-Reversed")
-    menu:addSlice(getText("IGUI_TTRP_LegsCrossed"), getTexture("media/ui/poses/sitting/CrossedLegs.png"), doEmote, "TTRP_LegsCrossedChair")
-    menu:addSlice(getText("IGUI_TTRP_GoblinSit"), getTexture("media/ui/poses/sitting/goblin.png"), doEmote, "TTRP_GoblinSit")
-    menu:addSlice(getText("IGUI_TTRP_SitChairArmsAroundSelf"), getTexture("media/ui/poses/sitting/sitarmschair.png"), doEmote, "TTRP_SitChairArmsAroundSelf")
-
+    menu:addSlice("Sit in Chair - Hand and Arm Thigh", getTexture("media/ui/poses/sitting/laxarmsit.png"), doEmote, "TTRP_HandThighArmThigh")
+    menu:addSlice("Thane Sit", getTexture("media/ui/poses/sitting/Thane.png"), doEmote, "TTRP_ThaneSit")
+    menu:addSlice("JARL Ballin", getTexture("media/ui/poses/sitting/JARLIN.png"), doEmote, "TTRP_JARL")
+    menu:addSlice("JARL Ballin Two Arms", getTexture("media/ui/poses/sitting/JARLIN.png"), doEmote, "TTRP_JARL_ARMS_DOWN")
+    menu:addSlice("Sit in Chair - Hands on Chair Girly", getTexture("media/ui/poses/sitting/Handchair.png"), doEmote, "TTRP_Sit-Hands-On-Chair")
+    menu:addSlice("Sit In Chair - Chaise Lounge", getTexture("media/ui/poses/sitting/chaise-lounge.png"), doEmote, "TTRP_ChaiseLounge")
+    menu:addSlice("Sit In Chair - Chaise Lounge Reversed", getTexture("media/ui/poses/sitting/chaise-reversed.png"), doEmote, "TTRP_ChaiseLoungeReversed")
+    menu:addSlice("Sit In Chair - One up, one down", getTexture("media/ui/poses/sitting/1up1down.png"), doEmote, "TTRP_One-leg-up-one-down")
+    menu:addSlice("Sit in Chair - One up, one down, reversed", getTexture("media/ui/poses/sitting/1up1downreversed.png"), doEmote, "TTRP_One-Leg-Up-One-Down-Reversed")
+    menu:addSlice("Sit in Chair - Legs Crossed", getTexture("media/ui/poses/sitting/CrossedLegs.png"), doEmote, "TTRP_LegsCrossedChair")
+    menu:addSlice("Sit in Chair - Goblin Sit", getTexture("media/ui/poses/sitting/goblin.png"), doEmote, "TTRP_GoblinSit")
 end
+
+
 
 function SittingObjectPaired(menu)
     menu:addSlice(getText("IGUI_TTRP_SittingBeside"), getTexture("media/ui/poses/sitting/lean-against.png"), doEmote, "TTRP_SittingNextTo")
@@ -394,16 +384,14 @@ function subTTRPprops(menu)
 end
 
 function subLongRifles(menu)
-    menu:addSlice(getText("IGUI_TTRP_HoldRifleSteady"), getTexture("media/ui/poses/props/aimrifle.png"), doEmote, "TTRP_HoldRifleSteady")
-    menu:addSlice(getText("IGUI_TTRP_HoldRifle"), getTexture("media/ui/poses/props/rifleidle.png"), doEmote, "TTRP_HoldRifle")
-    menu:addSlice(getText("IGUI_TTRP_HoldAtGunpointRifle"), getTexture("media/ui/poses/props/rifle-gunpoint.png"), doEmote, "TTRP_HoldAtGunpointRifle")
-    menu:addSlice(getText("IGUI_TTRP_HoldRifleAtHip"), getTexture("media/ui/poses/props/rifle-hip.png"), doEmote, "TTRP_HoldRifleAtHip")
-    menu:addSlice(getText("IGUI_TTRP_Holding_Rifle_Idle_2"), getTexture("media/ui/poses/props/rifle-idle.png"), doEmote, "TTRP_Holding_Rifle_Idle_2")
-    menu:addSlice(getText("IGUI_TTRP_Rifle_One_Hand_Up"), getTexture("media/ui/poses/props/rifle-idle-3.png"), doEmote, "TTRP_Rifle-One-Hand-Up")
-    menu:addSlice(getText("IGUI_TTRP_HoldRifleHip"), getTexture("media/ui/poses/props/HoldRifleToHip.png"), doEmote, "TTRP_HoldRifleToHip")
-    menu:addSlice(getText("IGUI_TTRP_HoldRifleKneel"), getTexture("media/ui/poses/props/kneelshoot.png"), doEmote, "TTRP_HoldRifleKneel")
-    menu:addSlice(getText("IGUI_TTRP_HoldRifleIdleKneel"), getTexture("media/ui/poses/props/kneelidle.png"), doEmote, "TTRP_HoldRifleIdleKneel")
-    menu:addSlice(getText("IGUI_TTRP_HoldRifleUp"), getTexture("media/ui/poses/props/holdrifleup.png"), doEmote, "TTRP_HoldRifleUp")
+  menu:addSlice("Stand - Holding Rifle Steady", getTexture("media/ui/poses/props/aimrifle.png"), doEmote, "TTRP_HoldRifleSteady")
+  menu:addSlice("Stand - Holding Rifle Idle", getTexture("media/ui/poses/props/rifleidle.png"), doEmote, "TTRP_HoldRifle")
+  menu:addSlice("Stand - Holding Rifle Gunpoint", getTexture("media/ui/poses/props/rifle-gunpoint.png"), doEmote, "TTRP_HoldAtGunpointRifle")
+  menu:addSlice("Stand - Holding Rifle Idle 2", getTexture("media/ui/poses/props/rifle-idle.png"), doEmote, "TTRP_Holding_Rifle_Idle_2")
+  menu:addSlice("Stand - Holding Rifle Up Idle", getTexture("media/ui/poses/props/rifle-idle-3.png"), doEmote, "TTRP_Rifle-One-Hand-Up")
+  menu:addSlice("Kneel - Holding Rifle Steady", getTexture("media/ui/poses/props/kneelshoot.png"), doEmote, "TTRP_HoldRifleKneel")
+  menu:addSlice("Kneel - Holding Rifle Idle", getTexture("media/ui/poses/props/kneelidle.png"), doEmote, "TTRP_HoldRifleIdleKneel")
+  menu:addSlice("Kneel - Holding Rifle Upwards", getTexture("media/ui/poses/props/holdrifleup.png"), doEmote, "TTRP_HoldRifleUp")
 end
 
 function subLongWeapons(menu)
@@ -418,13 +406,12 @@ function subLongWeapons(menu)
 end
 
 function subPistols(menu)
-    menu:addSlice(getText("IGUI_TTRP_HoldPistol"), getTexture("media/ui/poses/props/pistolsteady.png"), doEmote, "TTRP_HoldPistol")
-    menu:addSlice(getText("IGUI_TTRP_HoldPistolLowReady"), getTexture("media/ui/poses/props/pistollowready.png"), doEmote, "TTRP_HoldPistolLowReady")
-    menu:addSlice(getText("IGUI_TTRP_GunslingerReady"), getTexture("media/ui/poses/props/drawholster.png"), doEmote, "TTRP_GunslingerReady")
-    menu:addSlice(getText("IGUI_TTRP_Pistol_Held_Upwards"), getTexture("media/ui/poses/props/hold-pistol-up.png"), doEmote, "TTRP_Pistol-Held-Upwards")
-    menu:addSlice(getText("IGUI_TTRP_HeldAtGunpoint"), getTexture("media/ui/poses/props/gunoint1.png"), doEmote, "TTRP_HeldAtGunpoint")
-    menu:addSlice(getText("IGUI_TTRP_HeldAtGunpointOlympic"), getTexture("media/ui/poses/props/olympic.png"), doEmote, "TTRP_HeldAtGunpointOlympic")
-    menu:addSlice(getText("IGUI_TTRP_Clean_Pistol"), getTexture("media/ui/poses/props/cleangun.png"), doEmote, "TTRP_Clean_Pistol")
+    menu:addSlice("Stand - Holding Pistol Idle", getTexture("media/ui/poses/props/pistolsteady.png"), doEmote, "TTRP_HoldPistol")
+    menu:addSlice("Stand - Ready to Draw", getTexture("media/ui/poses/props/drawholster.png"), doEmote, "TTRP_GunslingerReady")
+    menu:addSlice("Stand - Hold Pistol Upright", getTexture("media/ui/poses/props/hold-pistol-up.png"), doEmote, "TTRP_Pistol-Held-Upwards")
+    menu:addSlice("Stand - Holding Pistol at Gunpoint", getTexture("media/ui/poses/props/gunoint1.png"), doEmote, "TTRP_HeldAtGunpoint")
+    menu:addSlice("Stand - Olympic Pistol Pose", getTexture("media/ui/poses/props/olympic.png"), doEmote, "TTRP_HeldAtGunpointOlympic")
+    menu:addSlice("Lean - Cleaning Pistol/Racking Pistol", getTexture("media/ui/poses/props/cleangun.png"), doEmote, "TTRP_Clean_Pistol")
 end
 
 
@@ -455,24 +442,9 @@ function subTTRPDances(menu)
 end
 
 function subTTRPDynamic(menu) 
-    menu:addSlice(getText("IGUI_TTRP_HandsOverStomach"), getTexture("media/ui/poses/dynamic/handstomach.png"), doEmote, "TTRP_HandsOverStomach")
-    menu:addSlice(getText("IGUI_TTRP_ArmSling"), getTexture("media/ui/poses/dynamic/sling.png"), doEmote, "TTRP_ArmSling")
-    menu:addSlice(getText("IGUI_TTRP_LimpLeg"), getTexture("media/ui/poses/dynamic/injuredlimp.png"), doEmote, "TTRP_LimpLeg")
-    menu:addSlice(getText("IGUI_TTRP_ShadowBoxing"), getTexture("media/ui/poses/dynamic/shadowboxing.png"), doEmote, "TTRP_ShadowBoxing")
-    menu:addSlice(getText("IGUI_TTRP_BackpackRummage"), getTexture("media/ui/poses/dynamic/backpackrummage.png"), doEmote, "TTRP_BackpackRummage")
-    menu:addSlice(getText("IGUI_TTRP_Drunk"), getTexture("media/ui/poses/dynamic/drunkenshamble.png"), doEmote, "TTRP_Drunk")
-    menu:addSlice(getText("IGUI_TTRP_CPR"), getTexture("media/ui/poses/dynamic/CPR.png"), doEmote, "TTRP_CPR")
-    menu:addSlice(getText("IGUI_TTRP_CookingWithSpice"), getTexture("media/ui/poses/dynamic/spicybrain.png"), doEmote, "TTRP_CookingWithSpice")
-    menu:addSlice(getText("IGUI_TTRP_Handwash"), getTexture("media/ui/poses/dynamic/handwash.png"), doEmote, "TTRP_Handwash")
-    menu:addSlice(getText("IGUI_TTRP_CoolingOff"), getTexture("media/ui/poses/dynamic/coolingoff.png"), doEmote, "TTRP_CoolingOff")
-    menu:addSlice(getText("IGUI_TTRP_PointBehind"), getTexture("media/ui/poses/dynamic/pointbehind.png"), doEmote, "TTRP_Blackboard")
-    menu:addSlice(getText("IGUI_TTRP_ExamineHand"), getTexture("media/ui/poses/dynamic/examine.png"), doEmote, "TTRP_ExamineHand")
-    menu:addSlice(getText("IGUI_TTRP_WallTinkle"), getTexture("media/ui/poses/dynamic/P-I-S-S.png"), doEmote, "TTRP_Wall_Tinkle")
-    menu:addSlice(getText("IGUI_TTRP_ClutchingToilet"), getTexture("media/ui/poses/dynamic/toiletchuck.png"), doEmote, "TTRP_ClutchingToilet")
-    menu:addSlice(getText("IGUI_TTRP_Snowangel"), getTexture("media/ui/poses/dynamic/starfish.png"), doEmote, "TTRP_Snowangel")
-    menu:addSlice(getText("IGUI_TTRP_ASL"), getTexture("media/ui/poses/dynamic/ASL.png"), doEmote, "TTRP_ASL")
-    menu:addSlice(getText("IGUI_TTRP_CampfireSit"), getTexture("media/ui/poses/props/icon1.png"), doEmote, "TTRP_CampfireSit")
-    -- Placeholder test pose menu:addSlice("T-pose test", getTexture("media/ui/poses/props/icon1.png"), doEmote, "TTRP_TPoseTest")end
+    menu:addSlice("Stomach Wound / Upset Stomach", getTexture("media/ui/poses/dynamic/handstomach.png"), doEmote, "TTRP_HandsOverStomach")
+    menu:addSlice("Arm in Sling", getTexture("media/ui/poses/dynamic/sling.png"), doEmote, "TTRP_ArmSling")
+    menu:addSlice("Limping", getTexture("media/ui/poses/dynamic/injuredlimp.png"), doEmote, "TTRP_LimpLeg")
     -- menu:addSlice("Brushing/Mopping", getTexture("media/ui/poses/dynamic/brushmop.png"), doTTRPActions, "Base.PropaneTank", "mop")
 
 end
