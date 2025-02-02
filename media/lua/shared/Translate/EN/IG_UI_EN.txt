@@ -41,21 +41,31 @@ IGUI_EN = {
     IGUI_TTRP_LeanArmUpRight = "Lean - Arm Lean Up Right",
     IGUI_TTRP_ArmLeanLeft = "Lean - Arm Lean Left",
     IGUI_TTRP_ArmLeanRight = "Lean - Arm Lean Right",
+    IGUI_TTRP_Bent_Forward = "Lean - Bent Forward",
+    IGUI_TTRP_Lean-Back-Arms-Crossed-Shy = "Lean - Back Arms Crossed Shy",
 
     -- Idle Poses
     IGUI_TTRP_JoJoPose = "Stand - JoJo Pose",
     IGUI_TTRP_HoldingHandsShy = "Stand - Holding Hands Shy",
+    IGUI_TTRP_SassyStance = " Stand - Sassy",
     IGUI_TTRP_HandOnHipAlt = "Stand - Hand on Hip Alt",
     IGUI_TTRP_HandOnChinHip = "Stand - Hand On Chin, Hip",
     IGUI_TTRP_HandInPocketCasual = "Stand - One Hand in Pocket Casual",
     IGUI_TTRP_ShyArmRub = "Stand - Shy Arm Rub",
     IGUI_TTRP_FoldingHandsDemurely = "Stand - Folding Hands Demurely",
     IGUI_TTRP_HoldVestStraps = "Stand - Hold Vest Straps",
+    IGUI_TTRP_HoldVestStrapsWalking = "Stand - Hold Vest Straps Walking",
     IGUI_TTRP_RubbingHandBehindHead = "Stand - Rubbing Hand Behind Head",
     IGUI_TTRP_HoldingNeck = "Stand - Holding Neck",
+    IGUI_TTRP_ThinkHoldSelfblend = "Stand - Thinking",
+    IGUI_TTRP_ShyHoldSelf = "Stand - Hold Self Shy",
+    IGUI_TTRP_Shy-Hands-Around-Self-2 = "Stand - Hold Self Shy 2",
+
 
     -- Active Poses
     IGUI_TTRP_Taunt = "Stand - Taunt",
+    IGUI_TTRP_WhoDoYouThinkIAm = "Stand - Who Do You Think I Am",
+    IGUI_TTRP_PierceHeaven = "Stand - Pierce The Heaven",
     IGUI_TTRP_FlourishingBow = "Stand - Flourishing Bow",
     IGUI_TTRP_ShockedPose = "Stand - Shocked Pose",
     IGUI_TTRP_MilitarySalute = "Stand - Military Salute",
@@ -81,6 +91,7 @@ IGUI_EN = {
 
     -- Sitting Submenu
     IGUI_TTRP_SitGround = "Sit on Ground",
+    IGUI_TTRP_SitGround2 = "Sit on Ground 2",
     IGUI_TTRP_SitFurniture1 = "Sit on Furniture 1",
     IGUI_TTRP_SitFurniture2 = "Sit on Furniture 2",
     IGUI_TTRP_PairedSitGround = "Paired Sit on Ground",
@@ -101,6 +112,11 @@ IGUI_EN = {
     IGUI_TTRP_KneelPrayer = "Kneel - Prayer",
     IGUI_TTRP_KneelHandOverHand = "Kneel - Hand Over Hand",
     IGUI_TTRP_KneelCrossedArms = "Kneel - Crossed Arms",
+
+    -- Sitting Ground 2
+    IGUI_TTRP_WrappedKneesGround = "Sit - Arms Wrapped Knees",
+    IGUI_TTRP_Meditate = " Sit - Meditate",
+    IGUI_TTRP_DeepSquat = "Sit - Deep Squat",
 
     -- Sitting Object
     IGUI_TTRP_ChairHeadInHands = "Sit In Chair/Bed - Head in Hands",
@@ -132,6 +148,8 @@ IGUI_EN = {
     IGUI_TTRP_OneLegUpOneDownReversed = "Sit In Chair - One Up, One Down Reversed",
     IGUI_TTRP_LegsCrossed = "Sit In Chair - Legs Crossed",
     IGUI_TTRP_GoblinSit = "Sit In Chair - Goblin Sit",
+    IGUI_TTRP_SitChairArmsAroundSelf = "Sit In Chair - Arms Around Self",
+    IGUI_TTRP_HandsBehindHeadChair = "Sit in Chair - Distressed",
 
     -- Sitting Object Paired
     IGUI_TTRP_SittingBeside = "Sit - Sitting Beside",
@@ -199,6 +217,7 @@ IGUI_EN = {
     IGUI_TTRP_HoldRifleSteady = "Stand - Holding Rifle Steady",
     IGUI_TTRP_HoldRifle = "Stand - Holding Rifle Idle",
     IGUI_TTRP_HoldAtGunpointRifle = "Stand - Holding Rifle Gunpoint",
+    IGUI_TTRP_HoldRifleAtHip = "Stand - Hold Rifle At Hip",
     IGUI_TTRP_Holding_Rifle_Idle_2 = "Stand - Holding Rifle Idle 2",
     IGUI_TTRP_Rifle_One_Hand_Up = "Stand - Holding Rifle Up Idle",
     IGUI_TTRP_HoldRifleHip = "Stand - Holding to Hip",
@@ -212,6 +231,8 @@ IGUI_EN = {
     IGUI_TTRP_Weapon_Shoulder = "Stand - Weapon on Shoulder",
     IGUI_TTRP_SwordStance1 = "Stand - Sword at Ready",
     IGUI_TTRP_SwordStance2 = "Crouch - Sword at Ready",
+    IGUI_TTRP_Katana-Stance-1 = "Stand - Katana Stance 1",
+    IGUI_TTRP_Katana-Stance-2 = "Stand - Katana Stance 2",
     IGUI_TTRP_HoldSpear = "Stand - Holding Spear",
     IGUI_TTRP_HoldSpearAnime = "Stand - Holding Spear Behind",
     IGUI_TTRP_HoldAtSpearpoint = "Stand - Holding at Spearpoint",
@@ -220,6 +241,9 @@ IGUI_EN = {
 
     -- Pistols
     IGUI_TTRP_HoldPistol = "Stand - Holding Pistol Idle",
+    IGUI_TTRP_HoldPistolLowReady = "Stand - Hold Pistol Low",
+    IGUI_TTRP_FanRevolver = "Stand - Fan Revolver",
+    IGUI_TTRP_PistolHipDrawn = "Stand - Pistol at Hip",
     IGUI_TTRP_GunslingerReady = "Stand - Ready to Draw",
     IGUI_TTRP_Pistol_Held_Upwards = "Stand - Hold Pistol Upright",
     IGUI_TTRP_HeldAtGunpoint = "Stand - Holding Pistol at Gunpoint",
@@ -263,6 +287,7 @@ IGUI_EN = {
     IGUI_TTRP_ClutchingToilet = "Kneel - Clutching Toilet",
     IGUI_TTRP_Snowangel = "Making Snowangels",
     IGUI_TTRP_ASL = "ASL",
+    IGUI_TTRP_CampfireSit = "Squat by Campfire",
 }
 
 
