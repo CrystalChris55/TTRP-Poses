@@ -26,6 +26,18 @@ module TTRP
 		StaticModel	=	Magazine,
 		WorldStaticModel	=	MagazineElec2Ground,
 	}
+
+	item TTRP_GirlypopTwerk
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	=	Forbidden Girlypop Twerk Card,
+		Tooltip	=	Tooltip_TTRPcard,
+		Icon	=	MagazineElectronics03,
+		StaticModel	=	Magazine,
+		WorldStaticModel	=	MagazineElec2Ground,
+	}
+
 	item TTRP_Forbidden_T-Pose
 	{
 		Weight	=	0.01,
@@ -66,7 +78,44 @@ module TTRP
 		StaticModel	=	Magazine,
 		WorldStaticModel	=	MagazineElec2Ground,
 	}
-
-
-
+	item TTRP_SexySax
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	=	Forbidden Sexy Sax Guy Card,
+		Tooltip	=	Tooltip_TTRPcard,
+		Icon	=	MagazineElectronics03,
+		StaticModel	=	Magazine,
+		WorldStaticModel	=	MagazineElec2Ground,
+	}
+	item TTRP_HurricaneKick
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	=	Forbidden Hurricane Kick Card,
+		Tooltip	=	Tooltip_TTRPcard,
+		Icon	=	MagazineElectronics03,
+		StaticModel	=	Magazine,
+		WorldStaticModel	=	MagazineElec2Ground,
+	}
+	item TTRP_SpookyMonthDance
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	=	Forbidden Spooky Month Dance,
+		Tooltip	=	Tooltip_TTRPcard,
+		Icon	=	MagazineElectronics03,
+		StaticModel	=	Magazine,
+		WorldStaticModel	=	MagazineElec2Ground,
+	}
+	item TTRP_Ascension
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	=	Forbidden Raptured By God Card,
+		Tooltip	=	Tooltip_TTRPcard,
+		Icon	=	MagazineElectronics03,
+		StaticModel	=	Magazine,
+		WorldStaticModel	=	MagazineElec2Ground,
+	}
 }

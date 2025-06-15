@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<animNode x_extends='looped.xml'>
+	<m_Name>TTRP_HoldBehindHead</m_Name>
+	<m_AnimName>TTRP_HoldBehindHead</m_AnimName>
+	<m_BlendTime>0.1</m_BlendTime>
+	<m_Conditions>
+		<m_StringValue>TTRP_HoldBehindHead</m_StringValue>
+	</m_Conditions>
+</animNode>

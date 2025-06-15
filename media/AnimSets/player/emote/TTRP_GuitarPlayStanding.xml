@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<animNode x_extends='looped.xml'>
+	<m_Name>TTRP_GuitarPlayStanding</m_Name>
+	<m_AnimName>TTRP_GuitarPlayStanding</m_AnimName>
+	<m_BlendTime>0.1</m_BlendTime>
+	<m_Conditions>
+		<m_StringValue>TTRP_GuitarPlayStanding</m_StringValue>
+	</m_Conditions>
+		<m_SubStateBoneWeights>
+		<boneName>Bip01_Spine</boneName>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+</animNode>

@@ -1,5 +1,7 @@
 Sandbox_EN = {
     Sandbox_TTRP Poses = "TTRP Poses",
-    Sandbox_ToggleGhosting = "Toggles Ghost Mode for player collisions during poses. When checked, Ghost Mode activates during posing.",
-    Sandbox_GhostToggleRange = "If Toggle Ghosting is true, sets the zombie proximity range for auto disabling Ghost mode. Distance is in tiles. Default: 30. Min: 1. Max: 512",
+    Sandbox_ToggleGhosting = "Toggle Pose Ghosting",
+           Sandbox_ToggleGhosting_tooltip = "Toggles Ghost Mode for player collisions during poses. When checked, Ghost Mode activates during posing, disabling the player hitbox to make paired posing easier.",
+    Sandbox_GhostToggleRange = "Ghost Toggle Range",
+            Sandbox_GhostToggleRange_tooltip = "If Toggle Ghosting is true, sets the zombie proximity range for auto disabling Ghost mode. Distance is in tiles.",
   }
